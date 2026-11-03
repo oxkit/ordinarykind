@@ -43,7 +43,8 @@
     try {
       var response = await fetch(endpoint, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
+        // SWA intercepts OPTIONS; this safelisted type lets the JSON body reach our origin checks.
+        headers: { 'Content-Type': 'text/plain;charset=UTF-8' },
         credentials: 'omit',
         signal: controller.signal,
         body: JSON.stringify({
