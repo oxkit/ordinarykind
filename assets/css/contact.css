@@ -1,0 +1,25 @@
+.ox-contact{--contact-bg:rgba(60,54,80,.55);--contact-input:#1d1828;--contact-ink:#efe4d2;--contact-line:#8a7d9b;--contact-button:#c8a97a;--contact-on-button:#14101d;--contact-radius:18px;box-sizing:border-box;max-width:860px;width:calc(100% - 40px);margin:56px auto;padding:32px;border:1px solid var(--contact-line);border-radius:var(--contact-radius);background:var(--contact-bg);color:var(--contact-ink);text-align:left}
+.ox-contact h2{font-size:clamp(28px,4vw,38px);line-height:1.2;margin:0 0 12px}
+.ox-contact--night h2{font-family:var(--font-display,Georgia,serif)}
+.inner:not(.story)>.ox-contact--night{width:100%}
+.ox-contact>p{margin:0 0 24px}
+.ox-contact-form{display:grid;gap:18px;min-width:0;color:var(--contact-ink,inherit)}
+.ox-contact-fields{display:grid;gap:18px;min-width:0}
+.ox-contact-form label{display:block;font:inherit;font-weight:600;line-height:1.5;margin:0}
+.ox-contact-form label span{font-weight:400;font-size:14px}
+.ox-contact-form input,.ox-contact-form textarea{display:block;box-sizing:border-box;width:100%;min-width:0;min-height:48px;margin-top:7px;padding:11px 14px;border:1px solid var(--contact-line,#9c8068);border-radius:8px;background:var(--contact-input,#fff);color:var(--contact-ink,inherit);font:inherit;line-height:1.5}
+.ox-contact-form textarea{resize:vertical}
+.ox-contact-form input:focus-visible,.ox-contact-form textarea:focus-visible,.ox-contact-form button:focus-visible,.ox-contact a:focus-visible{outline:3px solid var(--contact-button,#c98a1b);outline-offset:3px}
+.ox-contact-form button{justify-self:start;box-sizing:border-box;min-height:48px;min-width:160px;padding:12px 22px;border:1px solid transparent;border-radius:8px;background:var(--contact-button,#eeaa2c);color:var(--contact-on-button,#231f20);font:inherit;font-weight:700;line-height:1.5;cursor:pointer}
+.ox-contact-form button:disabled{opacity:.6;cursor:wait}
+.ox-contact-form [data-contact-status],.ox-contact-note{margin:0;font-size:14px;line-height:1.6;color:inherit}
+.ox-contact-form [data-error=true]{font-weight:700}
+.ox-contact-form .ox-contact-trap{position:absolute;left:-10000px;width:1px;height:1px;overflow:hidden}
+.ox-contact .ox-contact-direct{margin:22px 0 0;overflow-wrap:anywhere}
+.ox-contact-direct a{display:inline-flex;align-items:center;min-height:48px;min-width:48px;color:inherit;text-decoration:underline;text-underline-offset:3px}
+.ox-contact--happy{--contact-bg:#fff;--contact-input:#fff6ec;--contact-ink:#33251c;--contact-line:#9c8068;--contact-button:#c93315;--contact-on-button:#fff;--contact-radius:20px}
+.ox-contact--kiddo{--contact-bg:#fffdf6;--contact-input:#fff;--contact-ink:#3a2e28;--contact-line:#2e827e;--contact-button:#2e827e;--contact-on-button:#fff;--contact-radius:20px;max-width:640px}
+.ox-contact--kiddo h2{font-family:Dimbo,Nunito,sans-serif;font-weight:400}
+.ox-contact--palace{--contact-input:#fff;--contact-ink:#231f20;--contact-line:#8d7c62;--contact-button:#eeaa2c;--contact-on-button:#231f20}
+@media(min-width:600px){.ox-contact-fields{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:420px){.ox-contact{width:calc(100% - 32px);padding:22px 18px;margin-block:40px}}

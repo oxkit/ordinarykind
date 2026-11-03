@@ -170,6 +170,7 @@ a{color:var(--gold-300);text-decoration:none}
  #spot{display:none}
 }
 </style>
+<link rel="stylesheet" href="assets/css/contact.css?v=f4df662996">
 </head>
 <body>
 <canvas id="sky"></canvas>
@@ -287,6 +288,25 @@ a{color:var(--gold-300);text-decoration:none}
 </div>
 </div>
 
+<section class="ox-contact ox-contact--night" id="contact" aria-labelledby="contact-heading">
+<h2 id="contact-heading">Get in touch</h2>
+<p>For questions about Ordinary Kind or our brands, send us a message.</p>
+<form class="ox-contact-form" id="contact-form" data-contact-site="ordinarykind" action="https://delightful-meadow-0fa5c1200.8.azurestaticapps.net/api/contact?site=ordinarykind" method="post">
+  <div class="ox-contact-fields">
+    <label for="contact-name">Name <span>(required)</span><input id="contact-name" name="name" type="text" required maxlength="100" autocomplete="name"></label>
+    <label for="contact-email">Email <span>(required)</span><input id="contact-email" name="email" type="email" required maxlength="254" autocomplete="email"></label>
+  </div>
+  <label for="contact-phone">Phone <span>(optional)</span><input id="contact-phone" name="phone" type="tel" maxlength="40" autocomplete="tel"></label>
+  <label for="contact-message">Message <span>(required)</span><textarea id="contact-message" name="message" required minlength="10" maxlength="5000" rows="6" aria-describedby="contact-privacy"></textarea></label>
+  <div class="ox-contact-trap" aria-hidden="true"><label>Leave this field empty<input name="website" type="text" tabindex="-1" autocomplete="off"></label></div>
+  <p id="contact-privacy" class="ox-contact-note">Your details and message will be emailed to we@ordinarykind.com so we can reply. Phone is optional. Please leave out sensitive information.</p>
+  <button type="submit" disabled>Send message</button>
+  <p data-contact-status class="ox-contact-status" role="status" aria-live="polite" tabindex="-1">Preparing the form...</p>
+  <noscript><p>Please email <a href="mailto:we@ordinarykind.com">we@ordinarykind.com</a> to get in touch.</p></noscript>
+</form>
+<p class="ox-contact-direct">Prefer email? <a href="mailto:we@ordinarykind.com">we@ordinarykind.com</a></p>
+</section>
+
 <div class="foot">
 <div class="co"><b>Ordinary Kind Pte Ltd</b><br>Incorporated in Singapore · ordinarykind.com</div>
 <div class="links">
@@ -396,5 +416,6 @@ if(finePointer&&!reduceMotion){
  addEventListener('scroll',upd,{passive:true});upd();
 })();
 </script>
+<script src="assets/js/contact.js?v=7612d6f9ad" defer></script>
 </body>
 </html>
